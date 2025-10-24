@@ -24,12 +24,574 @@
     <main>
         <article class="tutorial-content">
             <div class="container">
-                <h1>VS Code & GitHub Copilot Setup</h1>
-                <p class="subtitle">Configure VS Code with GitHub Copilot as your AI pair programmer</p>
+                <h1>VS Code & GitHub Copilot: The Complete Guide</h1>
+                <p class="subtitle">Master VS Code with AI-powered development tools and deploy with Cloudflare</p>
                 
                 <section>
-                    <h2>Coming Soon</h2>
-                    <p>This tutorial is currently being prepared. Check back soon for detailed instructions on setting up VS Code with GitHub Copilot.</p>
+                    <h2>What is VS Code?</h2>
+                    <p>Visual Studio Code (VS Code) is a free, open-source code editor developed by Microsoft. It's become the most popular code editor among developers due to its extensibility, performance, and rich ecosystem of extensions.</p>
+                    
+                    <h3>Why VS Code?</h3>
+                    <ul>
+                        <li><strong>Free and Open Source:</strong> No cost, fully customizable</li>
+                        <li><strong>Lightweight but Powerful:</strong> Fast startup with IDE-level features</li>
+                        <li><strong>Massive Extension Marketplace:</strong> Thousands of extensions for every need</li>
+                        <li><strong>Integrated Terminal:</strong> Run commands without leaving the editor</li>
+                        <li><strong>Git Integration:</strong> Built-in version control</li>
+                        <li><strong>Multi-Language Support:</strong> Works with virtually any programming language</li>
+                        <li><strong>Cross-Platform:</strong> Windows, macOS, and Linux</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Setting Up VS Code</h2>
+                    
+                    <h3>Step 1: Download and Install</h3>
+                    <ol>
+                        <li>Go to <a href="https://code.visualstudio.com" target="_blank">code.visualstudio.com</a></li>
+                        <li>Download for your operating system</li>
+                        <li>Run the installer</li>
+                        <li>Optional: Add VS Code to PATH during installation (recommended)</li>
+                        <li>Launch VS Code</li>
+                    </ol>
+
+                    <h3>Step 2: Essential Extensions</h3>
+                    <p>Install these core extensions to enhance your development experience:</p>
+                    <ul>
+                        <li><strong>GitHub Copilot:</strong> AI pair programmer (requires subscription)</li>
+                        <li><strong>GitHub Copilot Chat:</strong> Conversational AI assistance</li>
+                        <li><strong>Prettier:</strong> Code formatter</li>
+                        <li><strong>ESLint:</strong> JavaScript/TypeScript linting</li>
+                        <li><strong>GitLens:</strong> Enhanced Git capabilities</li>
+                        <li><strong>Live Server:</strong> Local development server with live reload</li>
+                    </ul>
+
+                    <h3>Step 3: Configure Your Environment</h3>
+                    <p>Open Settings (<code>Ctrl+,</code> or <code>Cmd+,</code>) and configure:</p>
+                    <ul>
+                        <li>Font size and family</li>
+                        <li>Theme (Dark+, Light+, or install custom themes)</li>
+                        <li>Auto-save settings</li>
+                        <li>Format on save</li>
+                        <li>Tab size and indentation</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>GitHub Copilot: Your AI Pair Programmer</h2>
+                    
+                    <h3>What is GitHub Copilot?</h3>
+                    <p>GitHub Copilot is an AI-powered code completion tool that suggests whole lines or entire functions as you type. It's powered by OpenAI's Codex model, trained on billions of lines of public code.</p>
+
+                    <h3>Setting Up GitHub Copilot</h3>
+                    <ol>
+                        <li>Subscribe at <a href="https://github.com/features/copilot" target="_blank">github.com/features/copilot</a>
+                            <ul>
+                                <li><strong>Individual:</strong> $10/month or $100/year</li>
+                                <li><strong>Business:</strong> $19/user/month</li>
+                                <li><strong>Free:</strong> For verified students, teachers, and maintainers of popular open-source projects</li>
+                            </ul>
+                        </li>
+                        <li>Install the "GitHub Copilot" extension in VS Code</li>
+                        <li>Install "GitHub Copilot Chat" extension for conversational AI</li>
+                        <li>Sign in with your GitHub account when prompted</li>
+                        <li>Accept the terms and conditions</li>
+                        <li>Start coding—Copilot suggestions appear automatically!</li>
+                    </ol>
+
+                    <h3>Using GitHub Copilot Effectively</h3>
+                    
+                    <h4>Code Completion</h4>
+                    <ul>
+                        <li><strong>Accept suggestion:</strong> Press <code>Tab</code></li>
+                        <li><strong>Reject suggestion:</strong> Press <code>Esc</code> or keep typing</li>
+                        <li><strong>See alternative suggestions:</strong> <code>Alt+]</code> or <code>Alt+[</code></li>
+                        <li><strong>Trigger manually:</strong> <code>Alt+\</code> (or <code>Option+\</code> on Mac)</li>
+                    </ul>
+
+                    <h4>Writing Better Prompts</h4>
+                    <p>Copilot responds to comments and function names. Be specific:</p>
+                    <pre><code>// Function to fetch user data from API and cache it for 5 minutes
+async function getUserData(userId) {
+    // Copilot will suggest the implementation
+}</code></pre>
+
+                    <h4>GitHub Copilot Chat</h4>
+                    <p>Use the chat interface for:</p>
+                    <ul>
+                        <li><strong>/explain:</strong> Explain selected code</li>
+                        <li><strong>/fix:</strong> Suggest fixes for problems</li>
+                        <li><strong>/tests:</strong> Generate unit tests</li>
+                        <li><strong>/doc:</strong> Add documentation comments</li>
+                        <li>Ask questions about your code or programming concepts</li>
+                        <li>Request refactoring or optimization suggestions</li>
+                    </ul>
+
+                    <h3>Tips for Maximum Productivity</h3>
+                    <ul>
+                        <li>Write descriptive function and variable names</li>
+                        <li>Use comments to describe complex logic before implementing</li>
+                        <li>Break large functions into smaller, well-named pieces</li>
+                        <li>Review and test all AI-generated code</li>
+                        <li>Use Copilot for boilerplate and repetitive code</li>
+                        <li>Combine Copilot with your own expertise—it's an assistant, not a replacement</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Alternative AI Models & Extensions</h2>
+                    
+                    <h3>Codeium (Free Alternative)</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> Free for individuals</li>
+                        <li><strong>Features:</strong> Similar to Copilot with code completions and chat</li>
+                        <li><strong>Extension:</strong> "Codeium" in VS Code marketplace</li>
+                        <li><strong>Supports:</strong> 70+ languages</li>
+                    </ul>
+
+                    <h3>Tabnine</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> Free tier available, Pro from $12/month</li>
+                        <li><strong>Features:</strong> AI completions, works offline, team learning</li>
+                        <li><strong>Privacy:</strong> Option for on-premise deployment</li>
+                    </ul>
+
+                    <h3>Amazon CodeWhisperer</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> Free for individuals (with AWS account)</li>
+                        <li><strong>Features:</strong> Code suggestions, security scanning</li>
+                        <li><strong>Strength:</strong> AWS services integration</li>
+                    </ul>
+
+                    <h3>Continue.dev (Open Source)</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> Free, open source</li>
+                        <li><strong>Features:</strong> Use your own API keys for GPT-4, Claude, or local models</li>
+                        <li><strong>Flexibility:</strong> Choose your own AI model</li>
+                    </ul>
+
+                    <h3>Cursor (AI-First Editor)</h3>
+                    <ul>
+                        <li><strong>Cost:</strong> Free tier, Pro $20/month</li>
+                        <li><strong>Features:</strong> VS Code fork with advanced AI features built-in</li>
+                        <li><strong>Note:</strong> Separate editor, not an extension</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Model Context Protocol (MCP)</h2>
+                    
+                    <h3>What is MCP?</h3>
+                    <p>Model Context Protocol is an emerging standard for connecting AI models to external data sources and tools. Think of it as a way to give AI assistants access to your specific context—databases, APIs, documentation, and more.</p>
+
+                    <h3>Why MCP Matters</h3>
+                    <ul>
+                        <li><strong>Better Context:</strong> AI can access your project-specific information</li>
+                        <li><strong>Custom Tools:</strong> Extend AI with domain-specific capabilities</li>
+                        <li><strong>Standardization:</strong> One protocol works across different AI tools</li>
+                        <li><strong>Security:</strong> Control what data AI can access</li>
+                    </ul>
+
+                    <h3>MCP in Practice</h3>
+                    <p>While still evolving, MCP enables scenarios like:</p>
+                    <ul>
+                        <li>AI querying your production database structure</li>
+                        <li>Accessing internal API documentation</li>
+                        <li>Reading from company knowledge bases</li>
+                        <li>Integrating with project management tools</li>
+                    </ul>
+
+                    <h3>Getting Started with MCP</h3>
+                    <ol>
+                        <li>Check if your AI tool supports MCP (Anthropic's Claude, some VS Code extensions)</li>
+                        <li>Explore MCP servers for common integrations</li>
+                        <li>Consider building custom MCP servers for your specific needs</li>
+                        <li>Visit <a href="https://modelcontextprotocol.io" target="_blank">modelcontextprotocol.io</a> for documentation</li>
+                    </ol>
+                </section>
+
+                <section>
+                    <h2>Code Quality with Codacy</h2>
+                    
+                    <h3>What is Codacy?</h3>
+                    <p>Codacy is an automated code review tool that helps maintain code quality by identifying issues, security vulnerabilities, and code complexity.</p>
+
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li><strong>Automated Code Review:</strong> Analyzes every commit and pull request</li>
+                        <li><strong>Security Scanning:</strong> Finds security vulnerabilities</li>
+                        <li><strong>Code Coverage:</strong> Tracks test coverage</li>
+                        <li><strong>Code Complexity:</strong> Identifies overly complex code</li>
+                        <li><strong>Code Duplication:</strong> Finds duplicate code</li>
+                        <li><strong>Multi-Language Support:</strong> 40+ languages</li>
+                    </ul>
+
+                    <h3>Setting Up Codacy</h3>
+                    <ol>
+                        <li>Sign up at <a href="https://www.codacy.com" target="_blank">codacy.com</a> (free for open source)</li>
+                        <li>Connect your GitHub, GitLab, or Bitbucket account</li>
+                        <li>Add repositories to analyze</li>
+                        <li>Configure coding standards and rules</li>
+                        <li>Integrate with pull requests for automatic reviews</li>
+                    </ol>
+
+                    <h3>VS Code Integration</h3>
+                    <ol>
+                        <li>Install the "Codacy" extension from marketplace</li>
+                        <li>Sign in with your Codacy account</li>
+                        <li>See code quality issues directly in your editor</li>
+                        <li>Get real-time feedback as you code</li>
+                    </ol>
+
+                    <h3>Pricing</h3>
+                    <ul>
+                        <li><strong>Open Source:</strong> Free</li>
+                        <li><strong>Pro:</strong> Starting at $15/user/month</li>
+                        <li><strong>Business:</strong> Custom pricing for teams</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Building with Cloudflare: Inexpensive Prototypes</h2>
+                    
+                    <h3>Why Cloudflare for Development?</h3>
+                    <p>Cloudflare offers a suite of serverless products that make it incredibly cheap (often free) to build and deploy full-stack applications. Perfect for prototypes, MVPs, and even production apps.</p>
+
+                    <h3>Cloudflare Workers</h3>
+                    <p><strong>What it is:</strong> Serverless JavaScript/TypeScript runtime at the edge</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Deploy globally to 300+ locations</li>
+                        <li>Instant cold starts (0ms)</li>
+                        <li>Low latency—runs close to users</li>
+                        <li>Web standard APIs (Fetch, Streams, etc.)</li>
+                    </ul>
+
+                    <h4>Use Cases:</h4>
+                    <ul>
+                        <li>API endpoints and microservices</li>
+                        <li>Serverless functions</li>
+                        <li>Authentication middleware</li>
+                        <li>Request routing and transformation</li>
+                        <li>A/B testing and feature flags</li>
+                    </ul>
+
+                    <h4>Pricing:</h4>
+                    <ul>
+                        <li><strong>Free:</strong> 100,000 requests/day</li>
+                        <li><strong>Paid:</strong> $5/month for 10 million requests</li>
+                    </ul>
+
+                    <h4>Example Worker:</h4>
+                    <pre><code>export default {
+  async fetch(request) {
+    return new Response('Hello from the edge!', {
+      headers: { 'content-type': 'text/plain' }
+    });
+  }
+};</code></pre>
+
+                    <h3>Cloudflare D1 (SQL Database)</h3>
+                    <p><strong>What it is:</strong> Serverless SQLite database at the edge</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>SQLite-compatible</li>
+                        <li>Automatic replication</li>
+                        <li>Low latency reads from edge</li>
+                        <li>SQL queries from Workers</li>
+                    </ul>
+
+                    <h4>Use Cases:</h4>
+                    <ul>
+                        <li>User data storage</li>
+                        <li>Application state</li>
+                        <li>Content management</li>
+                        <li>Product catalogs</li>
+                    </ul>
+
+                    <h4>Pricing:</h4>
+                    <ul>
+                        <li><strong>Free:</strong> 5 GB storage, 5 million reads/day, 100k writes/day</li>
+                        <li><strong>Paid:</strong> $5/month for 10 GB + more operations</li>
+                    </ul>
+
+                    <h4>Example:</h4>
+                    <pre><code>const result = await env.DB.prepare(
+  'SELECT * FROM users WHERE id = ?'
+).bind(userId).first();</code></pre>
+
+                    <h3>Cloudflare R2 (Object Storage)</h3>
+                    <p><strong>What it is:</strong> S3-compatible object storage without egress fees</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>S3-compatible API</li>
+                        <li>Zero egress fees (huge cost savings!)</li>
+                        <li>Automatic scaling</li>
+                        <li>Public and private buckets</li>
+                    </ul>
+
+                    <h4>Use Cases:</h4>
+                    <ul>
+                        <li>File uploads (images, videos, documents)</li>
+                        <li>Static asset hosting</li>
+                        <li>Backups and archives</li>
+                        <li>Media libraries</li>
+                    </ul>
+
+                    <h4>Pricing:</h4>
+                    <ul>
+                        <li><strong>Free:</strong> 10 GB storage/month</li>
+                        <li><strong>Paid:</strong> $0.015/GB/month (no egress fees!)</li>
+                    </ul>
+
+                    <h3>Cloudflare KV (Key-Value Storage)</h3>
+                    <p><strong>What it is:</strong> Globally distributed key-value storage</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Eventually consistent</li>
+                        <li>Extremely low latency reads</li>
+                        <li>Perfect for caching</li>
+                        <li>Simple API</li>
+                    </ul>
+
+                    <h4>Use Cases:</h4>
+                    <ul>
+                        <li>Session data</li>
+                        <li>Cache layer</li>
+                        <li>Configuration data</li>
+                        <li>Feature flags</li>
+                    </ul>
+
+                    <h4>Pricing:</h4>
+                    <ul>
+                        <li><strong>Free:</strong> 100,000 reads/day, 1,000 writes/day, 1 GB storage</li>
+                        <li><strong>Paid:</strong> $5/month for increased limits</li>
+                    </ul>
+
+                    <h3>Cloudflare Durable Objects</h3>
+                    <p><strong>What it is:</strong> Stateful serverless objects for coordination and real-time</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Strongly consistent storage</li>
+                        <li>WebSocket support</li>
+                        <li>Single-point coordination</li>
+                        <li>In-memory state</li>
+                    </ul>
+
+                    <h4>Use Cases:</h4>
+                    <ul>
+                        <li>Real-time collaboration (like Google Docs)</li>
+                        <li>Chat applications</li>
+                        <li>Gaming state management</li>
+                        <li>Distributed coordination</li>
+                    </ul>
+
+                    <h4>Pricing:</h4>
+                    <ul>
+                        <li><strong>Paid only:</strong> $5/month + usage</li>
+                        <li>$0.15 per million requests</li>
+                    </ul>
+
+                    <h3>Secrets Management</h3>
+                    <p><strong>What it is:</strong> Secure environment variables for Workers</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Encrypted at rest</li>
+                        <li>Never exposed in code</li>
+                        <li>Easy to update without redeployment</li>
+                    </ul>
+
+                    <h4>Use Cases:</h4>
+                    <ul>
+                        <li>API keys</li>
+                        <li>Database credentials</li>
+                        <li>Third-party service tokens</li>
+                    </ul>
+
+                    <h4>How to Use:</h4>
+                    <pre><code>// In wrangler.toml or dashboard
+[vars]
+API_KEY = "secret_key_here"
+
+// In Worker
+const apiKey = env.API_KEY;</code></pre>
+
+                    <h3>Cloudflare Pages</h3>
+                    <p><strong>What it is:</strong> Static site hosting with automatic deployments</p>
+                    
+                    <h4>Features:</h4>
+                    <ul>
+                        <li>Git integration (automatic deploys)</li>
+                        <li>Custom domains</li>
+                        <li>Preview deployments for PRs</li>
+                        <li>Unlimited bandwidth</li>
+                        <li>HTTPS included</li>
+                    </ul>
+
+                    <h4>Pricing:</h4>
+                    <ul>
+                        <li><strong>Free:</strong> 1 build at a time, 500 builds/month</li>
+                        <li><strong>Paid:</strong> $20/month for 5 concurrent builds, unlimited builds</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Building a Full-Stack App with Cloudflare</h2>
+                    
+                    <h3>Example Architecture</h3>
+                    <p>Here's how to build an inexpensive full-stack application:</p>
+
+                    <h4>Frontend:</h4>
+                    <ul>
+                        <li><strong>Cloudflare Pages:</strong> Host your React/Vue/Svelte app (free)</li>
+                        <li>Automatic HTTPS and CDN distribution</li>
+                        <li>Git-based deployments</li>
+                    </ul>
+
+                    <h4>Backend API:</h4>
+                    <ul>
+                        <li><strong>Cloudflare Workers:</strong> API endpoints (100k requests/day free)</li>
+                        <li>No cold starts, instant responses</li>
+                        <li>TypeScript/JavaScript</li>
+                    </ul>
+
+                    <h4>Database:</h4>
+                    <ul>
+                        <li><strong>Cloudflare D1:</strong> SQL database (5GB free)</li>
+                        <li>SQLite-compatible</li>
+                        <li>Automatic replication</li>
+                    </ul>
+
+                    <h4>File Storage:</h4>
+                    <ul>
+                        <li><strong>Cloudflare R2:</strong> Images, videos, files (10GB free)</li>
+                        <li>No egress fees (huge savings)</li>
+                        <li>S3-compatible</li>
+                    </ul>
+
+                    <h4>Caching:</h4>
+                    <ul>
+                        <li><strong>Cloudflare KV:</strong> Session data, cache (free tier generous)</li>
+                        <li>Global distribution</li>
+                        <li>Low latency</li>
+                    </ul>
+
+                    <h4>Secrets:</h4>
+                    <ul>
+                        <li><strong>Environment Variables:</strong> API keys, credentials (free)</li>
+                        <li>Secure and encrypted</li>
+                    </ul>
+
+                    <h3>Setting Up Your Development Environment</h3>
+                    
+                    <h4>Install Wrangler (Cloudflare CLI)</h4>
+                    <pre><code>npm install -g wrangler
+wrangler login</code></pre>
+
+                    <h4>Create a New Worker Project</h4>
+                    <pre><code>npm create cloudflare@latest my-app
+cd my-app
+npm run dev</code></pre>
+
+                    <h4>Deploy</h4>
+                    <pre><code>npm run deploy</code></pre>
+
+                    <h3>Cost Estimate for a Prototype</h3>
+                    <p>For a typical prototype or MVP:</p>
+                    <ul>
+                        <li><strong>Frontend hosting:</strong> $0 (Cloudflare Pages free tier)</li>
+                        <li><strong>API (100k req/day):</strong> $0 (Workers free tier)</li>
+                        <li><strong>Database (5GB):</strong> $0 (D1 free tier)</li>
+                        <li><strong>File storage (10GB):</strong> $0 (R2 free tier)</li>
+                        <li><strong>KV storage:</strong> $0 (free tier)</li>
+                        <li><strong>Total:</strong> $0/month for moderate traffic!</li>
+                    </ul>
+
+                    <p>Even with paid tiers, you're looking at $5-20/month for substantial traffic—far cheaper than traditional cloud providers.</p>
+                </section>
+
+                <section>
+                    <h2>VS Code Extensions for Cloudflare Development</h2>
+                    <ul>
+                        <li><strong>Cloudflare Workers:</strong> Official extension for Workers development</li>
+                        <li><strong>REST Client:</strong> Test your API endpoints without leaving VS Code</li>
+                        <li><strong>SQLite:</strong> View and query D1 databases locally</li>
+                        <li><strong>Thunder Client:</strong> API testing (Postman alternative in VS Code)</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Putting It All Together: Workflow</h2>
+                    
+                    <h3>Daily Development Process</h3>
+                    <ol>
+                        <li><strong>Open VS Code</strong> with your project</li>
+                        <li><strong>Use GitHub Copilot</strong> to write code faster
+                            <ul>
+                                <li>Accept suggestions with Tab</li>
+                                <li>Use Copilot Chat for explanations and refactoring</li>
+                            </ul>
+                        </li>
+                        <li><strong>Test locally</strong> with <code>wrangler dev</code></li>
+                        <li><strong>Check code quality</strong> with Codacy or ESLint</li>
+                        <li><strong>Commit with Git</strong> (GitLens helps visualize changes)</li>
+                        <li><strong>Push to GitHub</strong></li>
+                        <li><strong>Cloudflare auto-deploys</strong> from your Git repository</li>
+                    </ol>
+
+                    <h3>Best Practices</h3>
+                    <ul>
+                        <li>Use TypeScript for better type safety</li>
+                        <li>Set up automated testing (vitest, jest)</li>
+                        <li>Use environment variables for all secrets</li>
+                        <li>Monitor with Cloudflare Analytics (free)</li>
+                        <li>Set up error tracking (Sentry has a free tier)</li>
+                        <li>Review AI-generated code carefully</li>
+                        <li>Use branches and pull requests for team collaboration</li>
+                    </ul>
+                </section>
+
+                <section>
+                    <h2>Resources and Next Steps</h2>
+                    
+                    <h3>Documentation</h3>
+                    <ul>
+                        <li><a href="https://code.visualstudio.com/docs" target="_blank">VS Code Documentation</a></li>
+                        <li><a href="https://docs.github.com/copilot" target="_blank">GitHub Copilot Docs</a></li>
+                        <li><a href="https://developers.cloudflare.com" target="_blank">Cloudflare Developers</a></li>
+                        <li><a href="https://workers.cloudflare.com/examples" target="_blank">Workers Examples</a></li>
+                    </ul>
+
+                    <h3>Tutorials</h3>
+                    <ul>
+                        <li>Build your first Worker: <a href="https://developers.cloudflare.com/workers/get-started/" target="_blank">Getting Started Guide</a></li>
+                        <li>Create a full-stack app: <a href="https://developers.cloudflare.com/pages/framework-guides/" target="_blank">Framework Guides</a></li>
+                        <li>GitHub Copilot best practices: <a href="https://github.blog/category/engineering/copilot/" target="_blank">GitHub Blog</a></li>
+                    </ul>
+
+                    <h3>Community</h3>
+                    <ul>
+                        <li>Cloudflare Discord: <a href="https://discord.cloudflare.com" target="_blank">discord.cloudflare.com</a></li>
+                        <li>VS Code Community: <a href="https://code.visualstudio.com/community" target="_blank">VS Code Community</a></li>
+                        <li>GitHub Community: <a href="https://github.com/community" target="_blank">GitHub Discussions</a></li>
+                    </ul>
+
+                    <h3>Action Steps</h3>
+                    <ol>
+                        <li>Install VS Code and GitHub Copilot</li>
+                        <li>Create a Cloudflare account</li>
+                        <li>Build a simple "Hello World" Worker</li>
+                        <li>Add D1 database to store data</li>
+                        <li>Deploy a frontend with Pages</li>
+                        <li>Experiment with R2 for file uploads</li>
+                        <li>Build something real!</li>
+                    </ol>
                 </section>
             </div>
         </article>
