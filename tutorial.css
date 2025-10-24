@@ -1,0 +1,90 @@
+.tutorial-content {
+    padding: 2rem 0;
+    min-height: 60vh;
+}
+
+.tutorial-content h1 {
+    font-size: 2.5rem;
+    color: #1a1a2e;
+    margin-bottom: 0.5rem;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #667eea;
+}
+
+.tutorial-content section {
+    margin-bottom: 2rem;
+}
+
+.tutorial-content h2 {
+    font-size: 1.8rem;
+    color: #1a1a2e;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tutorial-content h3 {
+    font-size: 1.4rem;
+    color: #667eea;
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.tutorial-content p {
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.tutorial-content ul, .tutorial-content ol {
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+.tutorial-content li {
+    margin-bottom: 0.5rem;
+    line-height: 1.6;
+}
+
+.tutorial-content code {
+    background: #f4f4f4;
+    padding: 0.2rem 0.4rem;
+    border-radius: 3px;
+    font-family: 'Courier New', monospace;
+    font-size: 0.9em;
+}
+
+.tutorial-content pre {
+    background: #1a1a2e;
+    color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    overflow-x: auto;
+    margin-bottom: 1rem;
+}
+
+.tutorial-content pre code {
+    background: none;
+    padding: 0;
+    color: #f8f9fa;
+}
+
+.tutorial-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 1rem 0;
+}
+
+.tutorial-content blockquote {
+    border-left: 4px solid #667eea;
+    padding-left: 1rem;
+    margin-left: 0;
+    color: #666;
+    font-style: italic;
+}
